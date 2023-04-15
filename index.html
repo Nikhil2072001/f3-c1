@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>New Employees</h2>
+        <label for="name">Enter Name</label>
+        <input type="text" id="name" required>
+        <label for="pro">Enter Profession</label>
+        <input type="text" id="pro" required>
+        <label for="age">Enter Age</label>
+        <input type="number" id="age" required>
+        <br>
+        <button onclick="addUser()">Add User</button>
+    
+        <!-- <div id="mssg"></div> -->
+     <br>
+   <span id="mssg1" class="m1">Error : please make sure all the fields are filled before adding in an employee.</span>
+   <br>
+   <span id="mssg2" class="m2">Success : Employee Added!</span>
+   <h4>Added Employees</h4>
+   <span style="color: rgba(245, 246, 245, 0.742);" id="zero">you have 0 Employees.</span>
+        <table id="tab" style="width: 60%; border: 2px solid black;" >
+            <ol id="ol">
+          <thead>
+
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+          </thead>
+        </ol>
+        </table>
+        <ol id="list"></ol>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

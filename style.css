@@ -1,0 +1,44 @@
+*{
+    margin: 2%;
+    padding: 0;
+    background: #000;
+}
+body{
+    counter-reset: Serial;     
+}
+table
+		{
+		    border-collapse: separate;
+		}
+
+		tr td:first-child:before
+		{
+		  counter-increment: Serial;      
+		  content: counter(Serial); 
+		}
+        .m1{
+            visibility: hidden;
+            color: red;
+        }
+        .m2{
+            visibility: hidden;
+            color: green;
+        }
+        
+.container{
+    /* margin: 5%; */
+    /* border: 2px solid red; */
+    background-color: black;
+    color: white;
+}
+button{
+    background:white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10%;
+}
+input{
+    background: white;
+    color: #000;
+
+}
